@@ -36,7 +36,7 @@
 							center = map.getCenter();
 														
 							const Http = new XMLHttpRequest();
-							Http.createCORSRequest("GET", 'https://api.openweathermap.org/data/2.5/weather?lat=' + center.lat + '&lon=' + center.lng + '&appid=165c979ab2143c1c311c5633fe24c868');
+							Http.createCORSRequest("GET", 'https://api.openweathermap.org/data/2.5/weather?lat=' + center.lat + '&lon=' + center.lng + '&callback=JSONP&appid=165c979ab2143c1c311c5633fe24c868');
 							Http.send();
 							Http.onreadystatechange=(e)=>{
 							
